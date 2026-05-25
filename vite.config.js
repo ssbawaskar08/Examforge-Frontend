@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/api': { target: 'https://examforge-backend.vercel.app', changeOrigin: true },
+      '/api': { target: 'https://examforge-backend.vercel.app/api', changeOrigin: true },
       '/socket.io': { target: 'http://localhost:5000', changeOrigin: true, ws: true },
     },
   },
