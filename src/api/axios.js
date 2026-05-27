@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../store/authStore';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://examforge-backend.vercel.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
